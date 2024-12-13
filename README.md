@@ -1,2 +1,2 @@
-# JavaApplicationSystemYJL
- Java Final Group Project including Job Applications
+# TriviaGameYJL
+ Java Final Group Project Trivia Game!
