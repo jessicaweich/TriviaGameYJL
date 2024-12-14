@@ -6,6 +6,7 @@ public class Question {
     private String answer3;
     private String answer4;
     private int correctIndex;
+    // add a category instance variable
 
     public Question(String question, String answer1, String answer2, String answer3, String answer4, int correctIndex) {
         this.question = question;
