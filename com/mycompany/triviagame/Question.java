@@ -56,4 +56,5 @@ public class Question {
     public void setCorrectIndex(int correctIndex) {
         this.correctIndex = correctIndex;
     }
+
 }

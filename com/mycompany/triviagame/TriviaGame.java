@@ -11,12 +11,35 @@ public class TriviaGame {
 
         Scanner scr = new Scanner(System.in);
         boolean play = true;
+
+        CSQuestions.loadCSQuestions();
+        for(CSQuestions question : CSQuestions.csQuestionsArray) {
+            System.out.print(question);
+        }
+        /*
         do {
             System.out.println("Categories");
 
             System.out.println("Choose a category:");
+            CSQuestions question1 = new CSQuestions("What is a correct syntax to output \"Hello World\" in Java?"
+                    ,"Console.Writeline(\"Hello World\");"
+                    ,"print(\"Hello World\");"
+                    ,"echo(\"Hello World\");"
+                    ,"System.out.print(\"Hello World\");"
+                    , 4);
 
-            System.out.println("Would you like to continue? [y/n] :");
+            System.out.println(question1);
+            System.out.println("Enter your choice: ");
+            userGuess = input.nextInt();
+            if (userGuess == question1.getCorrectIndex()) {
+                System.out.println("Correct!");
+            }
+            else {
+                System.out.println("Wrong!");
+            }
+
+
+            System.out.println("Would you like to do another question? [y/n] :");
             String userPlay  = input.next();
 
 
@@ -31,36 +54,8 @@ public class TriviaGame {
             else play = true;
         } while (play);
 
-        /*
-        Question question1 = new Question("What is a correct syntax to output \"Hello World\" in Java?"
-                                        ,"Console.Writeline(\"Hello World\");"
-                                        ,"print(\"Hello World\");"
-                                        ,"echo(\"Hello World\");"
-                                        ,"System.out.print(\"Hello World\");"
-                                        , 4);
-
-        System.out.println("Question: " + question1.getQuestion() + "?");
-
-        System.out.println("1 : " + question1.getAnswer1() + "?");
-        System.out.println("2 : " + question1.getAnswer2() + "?");
-        System.out.println("3 : " + question1.getAnswer3() + "?");
-        System.out.println("4 : " + question1.getAnswer4() + "?");
-        System.out.println("Enter your choice: ");
-        String[] answers = question1.getAnswerArray();
-        int i = 0;
-        for (String answer : answers) {
-            ++i;
-            System.out.println(i + " : " + answer);
-        }
-        userGuess = input.nextInt();
-        if (userGuess == question1.getCorrectIndex()) {
-            System.out.println("Correct!");
-        }
-        else {
-            System.out.println("Wrong!");
-        }
-
          */
+
 
     }
 }
