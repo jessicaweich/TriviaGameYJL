@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class CSQuestions extends Question{
+public class PCQuestions extends Question{
     String question;
     String answer1;
     String answer2;
@@ -15,8 +15,8 @@ public class CSQuestions extends Question{
     int correctIndex;
 
     protected static String filePath =
-            "com/mycompany/triviagame/CSquestions.txt";
-    protected static ArrayList<CSQuestions> csQuestionsArray = new ArrayList<CSQuestions>();
+            "com/mycompany/triviagame/PCQuestions.txt";
+    protected static ArrayList<PCQuestions> pcQuestionsArray = new ArrayList<PCQuestions>();
 
     public static void loadCSQuestions() {
         // Try-with-resources ensures the reader is closed automatically
@@ -24,20 +24,20 @@ public class CSQuestions extends Question{
             String line;
             while ((line = reader.readLine()) != null) { // Process each line of the file
                 try {
-                    String[] CSQuestionData = line.split(",");
-                    if (CSQuestionData.length != 6) {
+                    String[] PCQuestionData = line.split(",");
+                    if (PCQuestionData.length != 6) {
                         throw new IllegalArgumentException("Invalid line format: " + line);
                     }
 
-                    String thisQuestion = CSQuestionData[0];
-                    String thisAnswer1 = CSQuestionData[1];
-                    String thisAnswer2 = CSQuestionData[2];
-                    String thisAnswer3 = CSQuestionData[3];
-                    String thisAnswer4 = CSQuestionData[4];
-                    int correctIndex = Integer.parseInt(CSQuestionData[5]);
+                    String thisQuestion = PCQuestionData[0];
+                    String thisAnswer1 = PCQuestionData[1];
+                    String thisAnswer2 = PCQuestionData[2];
+                    String thisAnswer3 = PCQuestionData[3];
+                    String thisAnswer4 = PCQuestionData[4];
+                    int correctIndex = Integer.parseInt(PCQuestionData[5]);
 
                     // Add the question to the list
-                    csQuestionsArray.add(new CSQuestions(thisQuestion, thisAnswer1, thisAnswer2, thisAnswer3,
+                    pcQuestionsArray.add(new PCQuestions(thisQuestion, thisAnswer1, thisAnswer2, thisAnswer3,
                             thisAnswer4, correctIndex));
                 } catch (NumberFormatException e) {
                     System.err.println("Error parsing correct index for line: " + line);
@@ -50,21 +50,23 @@ public class CSQuestions extends Question{
         }
     }
 
-    public static CSQuestions randomQuestion() {
+    public static PCQuestions randomQuestion() {
         Random rand = new Random();
-        int randomIndex = rand.nextInt(csQuestionsArray.size());
-        return csQuestionsArray.get(randomIndex);
+        int randomIndex = rand.nextInt(pcQuestionsArray.size());
+        return pcQuestionsArray.get(randomIndex);
     }
 
 
 
-    public CSQuestions(String question, String answer1, String answer2, String answer3, String answer4, int correctIndex) {
+    public PCQuestions(String question, String answer1, String answer2, String answer3, String answer4,
+                       int correctIndex) {
         super(question, answer1, answer2, answer3, answer4, correctIndex);
     }
 
     @Override
     public String toString() {
-        return "\nComputer Science Question:\n" + getQuestion() + "\n\n 1: "
+        return "\nPop Culture Question:\n" + getQuestion() + "\n\n 1: "
                 + getAnswer1() + "\n 2: " + getAnswer2() + "\n 3: " + getAnswer3() + "\n 4: " + getAnswer4() + "\n";
     }
 }
+
