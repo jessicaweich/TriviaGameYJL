@@ -15,6 +15,6 @@ In which country can you find the Great Barrier Reef?,New Zealand,Australia,Indo
 Which US state is known as the 'Sunshine State'?,California,Florida,Arizona,Texas,2
 What is the capital city of Japan?,Kyoto,Tokyo,Osaka,Nagoya,2
 Which mountain is the tallest in Africa?,Mount Kenya,Kilimanjaro,Rwenzori,Mawenzi,2
-What is the name of the sea bordered by Jordan, Israel, and Palestine?,Red Sea,Dead Sea,Caspian Sea,Black Sea,2
+What is the name of the sea bordered by Jordan - Israel and Palestine?,Red Sea,Dead Sea,Caspian Sea,Black Sea,2
 What is the largest island in the world?,Borneo,Greenland,New Guinea,Australia,2
 Which country is famous for its tulips and windmills?,Belgium,Netherlands,Switzerland,Germany,2
