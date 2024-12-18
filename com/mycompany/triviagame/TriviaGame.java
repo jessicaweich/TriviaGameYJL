@@ -126,7 +126,7 @@ public class TriviaGame {
 
         // Game over message and end-of-game summary
         System.out.println("\nGAME OVER!");
-        System.out.println("Player Stats:");
+        System.out.println("\nPlayer Stats:");
         // Display the total number of correctly answered questions and the total number of questions
         System.out.printf("You answered %d out of %d questions correctly.\n", Question.answersCorrect, Question.questionsAnswered);
         // Calculate the percentage of correct answers
