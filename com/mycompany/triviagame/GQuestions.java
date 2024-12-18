@@ -18,7 +18,7 @@ public class GQuestions extends Question {
     // File path for the text file containing questions
     protected static String filePath = "com/mycompany/triviagame/GQuestions.txt";
     // List to store all Geography questions
-    protected static ArrayList<com.mycompany.triviagame.GQuestions> GQuestionsArray = new ArrayList<GQuestions>();
+    protected static ArrayList<com.mycompany.triviagame.GQuestions> gQuestionsArray = new ArrayList<GQuestions>();
 
     // Loads questions from the file into the list
     public static void loadGQuestions() {
@@ -43,7 +43,7 @@ public class GQuestions extends Question {
                     int correctIndex = Integer.parseInt(GQuestionData[5]); // Get the correct answer index
 
                     // Add the question to the list
-                    GQuestionsArray.add(new com.mycompany.triviagame.GQuestions(thisQuestion, thisAnswer1, thisAnswer2, thisAnswer3,
+                    gQuestionsArray.add(new com.mycompany.triviagame.GQuestions(thisQuestion, thisAnswer1, thisAnswer2, thisAnswer3,
                             thisAnswer4, correctIndex));
                 } catch (NumberFormatException e) {
                     // Handle cases where the correct index can't be parsed as an integer
@@ -62,9 +62,9 @@ public class GQuestions extends Question {
     // Returns a random question from the list
     public static com.mycompany.triviagame.GQuestions randomQuestion() {
         Random rand = new Random(); // Create a random number generator
-        int randomIndex = rand.nextInt(GQuestionsArray.size()); // Get a random index
+        int randomIndex = rand.nextInt(gQuestionsArray.size()); // Get a random index
         Question.questionsAnswered += 1; // Increment the number of questions answered
-        return GQuestionsArray.get(randomIndex); // Return the random question
+        return gQuestionsArray.get(randomIndex); // Return the random question
     }
 
     // Constructor for the Geography question object

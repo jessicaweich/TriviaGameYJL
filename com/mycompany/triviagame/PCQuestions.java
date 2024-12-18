@@ -21,7 +21,7 @@ public class PCQuestions extends Question {
     protected static ArrayList<PCQuestions> pcQuestionsArray = new ArrayList<PCQuestions>();
 
     // Method to load questions from the file
-    public static void loadCSQuestions() {
+    public static void loadPCQuestions() {
         // Try-with-resources to handle file reading and close reader automatically
         try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
             String line;

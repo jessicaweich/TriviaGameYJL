@@ -19,7 +19,7 @@ public class TriviaGame {
 
         // Load questions from respective files into memory for all categories
         CSQuestions.loadCSQuestions();
-        PCQuestions.loadCSQuestions();
+        PCQuestions.loadPCQuestions();
         GQuestions.loadGQuestions();
 
         do {
@@ -132,7 +132,7 @@ public class TriviaGame {
         // Calculate the percentage of correct answers
         double percentage = (double) (100.00 * Question.answersCorrect / (double) Question.questionsAnswered);
         // Display the percentage of correct answers formatted to 2 decimal places
-        System.out.printf("Your percentage right was: %.2f%%\n", percentage);
+        System.out.printf("Your percentage correct was: %.2f%%\n", percentage);
         System.out.println("Thank you for playing & have a great winter break! Goodbye!");
     }
 }
