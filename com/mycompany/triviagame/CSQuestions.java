@@ -53,6 +53,7 @@ public class CSQuestions extends Question{
     public static CSQuestions randomQuestion() {
         Random rand = new Random();
         int randomIndex = rand.nextInt(csQuestionsArray.size());
+        Question.questionsAnswered +=1;
         return csQuestionsArray.get(randomIndex);
     }
 

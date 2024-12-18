@@ -1,5 +1,7 @@
 package com.mycompany.triviagame;
 public class Question {
+    protected static int questionsAnswered;
+    protected static int answersCorrect;
     private String question;
     private String answer1;
     private String answer2;
