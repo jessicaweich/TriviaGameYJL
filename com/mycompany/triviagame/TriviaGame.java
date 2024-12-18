@@ -127,9 +127,12 @@ public class TriviaGame {
         // Game over message and end-of-game summary
         System.out.println("\nGAME OVER!");
         System.out.println("Player Stats:");
+        // Display the total number of correctly answered questions and the total number of questions
         System.out.printf("You answered %d out of %d questions correctly.\n", Question.answersCorrect, Question.questionsAnswered);
+        // Calculate the percentage of correct answers
         double percentage = (double) (100.00 * Question.answersCorrect / (double) Question.questionsAnswered);
-        System.out.println("Your percentage right was: " + percentage + "%");
+        // Display the percentage of correct answers formatted to 2 decimal places
+        System.out.printf("Your percentage right was: %.2f%%\n", percentage);
         System.out.println("Thank you for playing & have a great winter break! Goodbye!");
     }
 }
