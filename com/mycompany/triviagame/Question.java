@@ -1,12 +1,14 @@
 package com.mycompany.triviagame;
 public class Question {
+    protected static int questionsAnswered;
+    protected static int answersCorrect;
     private String question;
     private String answer1;
     private String answer2;
     private String answer3;
     private String answer4;
-    String[] answers =  {answer1, answer2, answer3, answer4};
     private int correctIndex;
+    // add a category instance variable
 
     public Question(String question, String answer1, String answer2, String answer3, String answer4, int correctIndex) {
         this.question = question;
@@ -56,7 +58,5 @@ public class Question {
     public void setCorrectIndex(int correctIndex) {
         this.correctIndex = correctIndex;
     }
-    public String[] getAnswerArray() {
-        return answers;
-    }
+
 }
