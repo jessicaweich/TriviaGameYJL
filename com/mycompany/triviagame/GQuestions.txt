@@ -3,3 +3,18 @@ Which country is known for the creation of the sauna?,Denmark,Switzerland,Finlan
 Which mountain range is the longest in the world?,Himalayas,Alps,Appalachian Mountains,The Andes,4
 Which country is both a continent and a country?,Antarctica,Australia,Brazil,Russia,2
 What is the second-largest city in the United Kingdom?,Birmingham,Manchester,Glasgow,Bristol,1
+What is the capital city of Canada?,Ottawa,Montreal,Toronto,Vancouver,1
+Which river flows through the city of Paris?,Seine,Danube,Rhine,Thames,1
+Which country has the largest population in the world?,India,China,United States,Russia,2
+What is the smallest country in the world by area?,Monaco,Liechtenstein,Vatican City,San Marino,3
+Which ocean is the deepest in the world?,Atlantic,Indian,Pacific,Arctic,3
+What is the tallest waterfall in the world?,Niagara Falls,Angel Falls,Victoria Falls,Iguazu Falls,2
+Which desert is the largest in the world?,Sahara,Arabian,Gobi,Antarctic,4
+What is the longest river in South America?,Amazon,Paraná,Orinoco,Madeira,1
+In which country can you find the Great Barrier Reef?,New Zealand,Australia,Indonesia,Philippines,2
+Which US state is known as the 'Sunshine State'?,California,Florida,Arizona,Texas,2
+What is the capital city of Japan?,Kyoto,Tokyo,Osaka,Nagoya,2
+Which mountain is the tallest in Africa?,Mount Kenya,Kilimanjaro,Rwenzori,Mawenzi,2
+What is the name of the sea bordered by Jordan - Israel and Palestine?,Red Sea,Dead Sea,Caspian Sea,Black Sea,2
+What is the largest island in the world?,Borneo,Greenland,New Guinea,Australia,2
+Which country is famous for its tulips and windmills?,Belgium,Netherlands,Switzerland,Germany,2
